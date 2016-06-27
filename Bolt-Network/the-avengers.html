@@ -7,6 +7,7 @@
     <link href="css/main.css" rel="stylesheet" />
     <script src="js/vendor/angular.min.js"></script>
   </head>
+
   <body ng-app="BoltNetworkApp">
     <div class="jumbotron">
       <div class="container">
@@ -26,33 +27,9 @@
       </div>
     </div>
 
-    <div ng-controller="MainController" ng-repeat="movie in movies" class="main">
+    <div ng-controller="MainController" class="main">
       <div class="container">
-        <div class="content">
-          <div class="row">
-            
-            <div class="col-md-3" class="series_img">
-              <img ng-src="{{ movie.title_img }}" alt="{{ movie.img_alt }}" >
-            </div>
-            
-            <div class="col-md-6">
-              <h1 class="series">{{ movie.title }}</h1>
-              <h2 class="episode">{{ movie.rating }} / 10</h2>
-              <p class="description">{{ movie.description }}</p>
-            </div>
-
-            <div class="col-md-3">
-              <ul class="list-group">
-                <li class="list-group-item"><span>Director:</span> {{ movie.director }}</li>
-                <li class="list-group-item"><span>Genre:</span> {{ movie.genre }}</li>
-                <li class="list-group-item"><span>Date:</span>  {{ movie.date | date:'MMMM d, y' }}</li>
-                <li class="list-group-item"><span>Runtime:</span> {{ movie.date | date:'h' }}h {{ movies.date | date:'m' }}m</li>
-                <li class="list-group-item"><span>Starring:</span> {{ movie.starring }}</li>
-              </ul>
-            </div>
-            
-          </div>
-        </div>
+        <movie-listing listing="avengers"></movie-listing>
       </div>
     </div>
 
@@ -93,5 +70,8 @@
 
     <!-- Controllers -->
     <script src="js/controllers/MainController.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/movieListing.js"></script>
   </body>
 </html>

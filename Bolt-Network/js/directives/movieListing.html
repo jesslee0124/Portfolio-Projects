@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="row">
+    
+    <div class="col-md-3" class="series_img">
+      <img ng-src="{{ listing.title_img }}" alt="{{ listing.img_alt }}" >
+    </div>
+    
+    <div class="col-md-6">
+      <h1 class="series">{{ listing.title }}</h1>
+      <h2 class="episode">{{ listing.rating }} / 10</h2>
+      <p class="description">{{ listing.description }}</p>
+    </div>
+
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item"><span>Director:</span> {{ listing.director }}</li>
+        <li class="list-group-item"><span>Genre:</span> {{ listing.genre }}</li>
+        <li class="list-group-item"><span>Date:</span>  {{ listing.date | date:'MMMM d, y' }}</li>
+        <li class="list-group-item"><span>Runtime:</span> {{ listing.date | date:'h' }}h {{ listing.date | date:'m' }}m</li>
+        <li class="list-group-item"><span>Starring:</span> {{ listing.starring }}</li>
+      </ul>
+    </div>
+    
+  </div>
+</div>

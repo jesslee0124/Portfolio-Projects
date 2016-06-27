@@ -4,9 +4,8 @@
     <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/vendor/angular.min.js"></script>
   </head>
-  <body ng-app="BoltNetworkApp">
+  <body>
 
     <div class="jumbotron">
       <div class="container">
@@ -43,7 +42,7 @@
       </div>
     </div>
 
-    <div ng-controller="MainController" class="supporting">
+    <div class="supporting">
       <div class="container">
         <h3>A world of movies at your fingertips.</h3>
         <p>Choose from the latest titles, with new movies added every day.</p>
@@ -55,7 +54,7 @@
           </div>
           <div class="col-md-4">
             <div class="thumbnail">
-              <a href="the-avengers.html"><img src="img/harry-potter.jpg" alt="Harry Potter"></a>
+              <a href="#"><img src="img/harry-potter.jpg" alt="Harry Potter"></a>
             </div>
           </div>
         </div>
@@ -146,11 +145,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Modules -->
-    <script src="js/app.js"></script>
-
-    <!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>
   </body>
 </html>
