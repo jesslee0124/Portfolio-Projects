@@ -1,0 +1,125 @@
+html, body {
+    background: #000; 
+    font-family:"Oxygen", sans-serif; 
+    font-weight:300; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  max-width: 970px;
+}
+
+.jumbotron {
+  background-color: #000;
+  margin: 0;
+}
+
+/* Header */
+.header img {
+  width: 180px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.header .pull-right {
+  margin-top: -34px;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header li {
+  display: inline;
+  color: #fff;
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 2px;
+  color: #0393ff;
+  padding: 8px 20px;
+  border: 1px solid #0393ff;
+}
+
+.btn:hover {
+  border: 1px solid #0393ff;
+  background-color: #0393ff;
+  color: #fff;
+}
+
+/* Main */
+img {
+  display: block;
+  max-width: 100%;  
+  height: auto;
+}
+
+.main {
+    background-image:url(/img/diagmonds_@2X.png);
+    background-size:141px 142px; 
+    padding: 80px;
+}
+
+.main .series {
+    color:#0393ff;
+}
+
+.main .episode {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+}
+
+.main .description {
+    color: #fff;   
+}
+
+.main ul, .main img {
+    margin: 30px 0 0;
+}
+
+.main ul li {
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #0393ff;
+    color: #fff;
+}
+
+.list-group-item span {
+    color:#0393ff;
+    padding:0 10px 0 0;
+}
+    
+/* Footer */
+.footer {
+  background-color: #000;
+  padding: 70px 0 60px 0;
+}
+
+.footer h6 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  color: #0393ff;
+}
+
+/* Media Query */
+@media (max-width: 770px) {
+  .header .pull-right {
+    width: 100%;
+    margin: 20px auto !important;
+    text-align: center;
+  }
+}

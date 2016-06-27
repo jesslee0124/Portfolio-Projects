@@ -1,0 +1,528 @@
+/* GLOBAL STYLES 
+-----------------*/
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #444444;
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.35;
+}
+h1,
+h2,
+h3 {
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.25;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+h2 {
+	font-size: 48px;
+}
+section {
+	padding: 65px 0;
+}
+.content-wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 40px;
+}
+
+/* HEADER 
+----------*/
+header {
+	padding: 110px 0;
+	height: 625px;
+	background: url('../images/zen.jpg') top center no-repeat fixed;
+	background-size: 100%;
+	color: #ffffff;
+	text-align: center;
+}
+header h1 {
+	text-shadow: 1px 1px 2px #aaa;
+	font-size: 70px;
+	font-weight: bold;
+	padding: 50px 0;
+	letter-spacing: 0.2em;
+	margin-bottom: 10px;
+}
+header h1 span {
+	padding: 0 0 0 40px;
+}
+header q {
+	font-size: 22px;
+}
+header q span {
+	padding: 0 0 0 468px;
+}
+
+/* NAVIGATION 
+--------------*/
+nav {
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 2px 0px #fff;
+	box-shadow: 0px 0px 2px 0px #fff;
+	z-index: 99;
+}
+nav a.logo {
+	text-decoration: none;
+	color: #fff;
+}
+nav h1 {
+	display: inline-block;
+	padding: 15.5px 0;
+	margin: 0;
+	width: 170px;
+	text-transform: none;
+	font-weight: bold;
+}
+nav ul {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: right;
+	font-weight: bold;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul a {
+	padding: 25px 35px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+nav ul a:hover {
+	font-weight: bolder;
+}
+/* List icon - will only show at 767px resolution or less. */
+nav .fa-bars {
+	display: none;
+}
+
+/* PHILOSOPHY SECTION 
+-----------------*/
+.philosophy {
+	color: #76684f;
+}
+.philosophy hr.hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(118, 104, 79, 0.3);
+}
+.philosophy h2 {
+	text-transform: none;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	line-height: 2.2;
+}
+.philosophy .description {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.philosophy .description p {
+	font-size: 20px;
+	text-align: center;
+	line-height: 2.2;
+}
+.philosophy .btn {
+	text-align: center;
+}
+.philosophy button {
+	color: #fff;
+    background-color: #76684f;
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.philosophy button:hover {
+	background-color: rgba(118, 104, 79, 0.8);
+}
+.philosophy hr.btn {
+	width: 35%;
+	float: left;
+	margin-top: -50px;
+}
+.philosophy hr.right {
+	float: right;
+}
+
+/* SERVICES SECTION 
+--------------------*/
+.services {
+	color: #fff;
+	background-color: #76684f;
+}
+.services hr.hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.services h2 {
+	text-transform: none;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	line-height: 2.2;
+}
+.services .description {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.services .description p {
+	font-size: 20px;
+	text-align: center;
+	line-height: 2.2;
+}
+.services .btn {
+	text-align: center;
+}
+.services button {
+	color: #76684f;
+    background-color: #fff;
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.services button:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.services hr.btn {
+	width: 35%;
+	float: left;
+	margin-top: -50px;
+}
+.services hr.right {
+	float: right;
+}
+
+/* NEIGHBOURS SECTION 
+--------------------*/
+.neighbours {
+	background: #fff;
+}
+.neighbours h2 {
+	color: #76684f;
+	text-transform: none;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	line-height: 2.2;
+}
+.neighbours hr.hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(118, 104, 79, 0.3);
+}
+.neighbours .bg {
+	background: rgba(1, 1, 1, 0.6);
+	z-index: 1;
+	height: 180px;
+	padding: 120px 0 0 0;
+	width: 280px;
+	height: 280px;
+	border-radius: 280px;
+	margin: 0 auto;
+}
+.neighbours .bg h3 {
+	font-size: 35px;
+}
+.neighbours .column {
+	width: 32%;
+	float: left;
+	text-align: center;
+	margin: 20px 0.5% 0 0.5%;
+	color: #fff;
+}
+.neighbours .city {
+	position: relative;
+	width: 280px;
+	height: 280px;
+	border-radius: 280px;
+	margin: 0 auto;
+}
+.neighbours .city:hover .bg {
+	background: rgba(1, 1, 1, 0.2);
+}
+.neighbours .city a {
+	text-decoration: none;
+	color: #fff;
+}
+.neighbours .img1 {
+	background: url('../images/oakville.jpg');
+}
+.neighbours .img2 {
+	background: url('../images/hamilton.jpg');
+}
+.neighbours .img3 {
+	background: url('../images/niagara.jpg');
+	margin-bottom: 30px;
+}
+.neighbours p {
+	padding: 0 20px;
+	line-height: 1.25;
+}
+.neighbours .btn {
+	text-align: center;
+}
+.neighbours button {
+	color: #fff;
+    background-color: #fcfcb6;
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+}
+.neighbours hr.btn {
+	width: 35%;
+	float: left;
+	margin-top: -50px;
+}
+.neighbours hr.right {
+	float: right;
+}
+
+/* CONTACT SECTION
+--------------------*/
+.contact {
+	color: #fff;
+    background-color: #76684f;
+}
+.contact hr.hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact h2 {
+	text-transform: none;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	line-height: 2.2;
+}
+.contact form {
+	margin: 30px 0 0 0;
+	text-align: center;
+}
+.contact input,
+.contact textarea {
+	padding: 8px 36px 10px 36px;
+    background-color: #fff;
+    border: 1px solid #76684f;
+    margin: 0 0 0 17px;
+    outline-color: #fff;
+}
+.contact textarea {
+	margin: -1px 0 0 -7px;
+	width: 549px;
+	height: 220px;
+}
+.contact .msg {
+	margin: 0 24px 0 -23px;
+}
+.contact .submit,
+.contact .reset {
+	color: #76684f;
+    background-color: #fff;
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+}
+.contact .submit:hover,
+.contact .reset:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.contact .submit[value],
+.contact .reset[value] {
+	padding: 2px;
+	font-weight: bold;
+	font-size: 1.13em;
+}
+
+/* FOOTER SECTION 
+--------------------*/
+.footer {
+	color: #76684f;
+}
+.footer .addr,
+.footer .info {
+	text-align: center;
+	width: 50%;
+	float: left;
+}
+.footer a {
+	text-decoration: none;
+	color: #76684f;
+}
+.footer a:hover {
+	color: rgba(118,104,79,0.6);
+}
+.footer .copy {
+    text-align: center;
+    margin: 27px 0 0 0;
+}
+/* MEDIA QUERIES 
+-----------------*/
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	header {
+		height: auto;
+	}
+	header h1 {
+		font-size: 50px;
+		padding-bottom: 10px;
+	}
+	header h2 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	nav ul a {
+		padding: 25px 14px;
+	}
+	.neighbours .city {
+		width: 200px;
+		height: 200px;
+	}
+	.neighbours .bg {
+		width: 200px;
+		height: 200px;
+		padding: 84px 0 0 0;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	header h1 {
+		font-size: 40px;
+		padding: 6px 0 0 0;
+	}
+	header h2 {
+		font-size: 18px;
+	}
+	header q {
+		font-size: 16px;
+	}
+	header q span {
+		padding: 0 0 0 338px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	nav {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		background: #76684f !important;
+		color: #fff;
+	}
+	nav .fa-bars {
+		display: block;
+		padding: 19px 15px;
+		cursor: pointer;
+		float: right;
+	}
+	nav ul.dropdown {
+		display: none;
+		text-align: left;
+		overflow: hidden;
+	}
+	nav ul.dropdown li {
+		display: block;
+		border-top: 1px solid white;
+	}
+	nav ul.dropdown a {
+		color: white;
+		padding-left: 15px;
+	}
+	nav ul.dropdown.open {
+		display: block;
+		width: 100%;
+	}
+	.philosophy .description p {
+	    font-size: 17px;
+	    line-height: 1.9;
+	}
+	.services .description p {
+	    font-size: 17px;
+	    line-height: 1.9;
+	}
+	.neighbours .column {
+		width: 100%;
+	}
+	.contact .msg {
+	    margin: 0;
+	}
+	.contact textarea {
+	    margin: 37px 0 0 -69px;
+	    width: 304px;
+	    height: 140px;
+	}
+	.footer .content-wrapper p {
+		width: 100%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	header,
+	nav,
+	section {
+		min-width: 320px;
+	}
+	header {
+		padding: 80px 40px 0 40px;
+		min-height: 230px;
+	}
+	header h1 {
+		font-size: 30px;
+	}
+	header h1 span {
+		padding: 0 0 0 10px;
+	}	
+	header q span {
+		padding: 0;
+		text-align: center;
+	}
+	.content-wrapper {
+		padding: 0 25px;
+	}
+	.neighbours h3 {
+		font-size: 16px;
+	}
+	.footer .addr, 
+	.footer .info {
+	    width: 100%;
+	}
+	.footer .info {
+		margin: 30px 0 0 0;
+	}
+}

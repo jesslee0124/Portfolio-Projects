@@ -1,0 +1,95 @@
+<!Doctype html> 
+<html>
+	<head>
+		<title>Liene Abraham | Hamilton</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style_hamilton.css">
+		<link rel="icon" type="image/png" href="images/favicon.ico">
+	</head>
+	<body>
+		<header>
+			<h1>liene <span>abraham</span></h1>
+			<div>
+				<q><em>A home is made of walls and beams; a home is built with love and dreams<br><br><span>Dr. William A. Ward</span></em></q>
+			</div>
+		</header>
+		<nav>
+			<a class="logo" href="index.html"><h1>l i e n e</h1></a>
+			<span class="fa fa-bars fa-2x" title="menu"></span>
+			<ul class="dropdown">
+				<li><a href="philosophy.html">Philosophy</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="neighbours.html">Neighbours</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<section id="hamilton" class="hamilton">
+			<div class="content-wrapper">
+				<h2>Hamilton</h2>
+				<hr class="hr">
+				<div class="description">
+					<p>Bacon ipsum dolor amet ball tip pork chop pork belly meatloaf jowl. Ham hock venison tri-tip flank strip steak, sirloin beef ribs spare ribs drumstick. Jerky meatball tongue cow. Drumstick sausage cupim capicola shankle filet mignon fatback. Shank turkey venison landjaeger drumstick pastrami, brisket cupim turducken. Meatloaf corned beef pork belly, boudin pancetta shankle pork loin rump leberkas. Chicken ball tip spare ribs strip steak pancetta ham hock biltong, andouille prosciutto brisket tenderloin kevin. Short ribs pig t-bone pork loin corned beef. Pastrami jowl cupim, short loin beef ribs chuck chicken shoulder.<br>
+					Pork loin landjaeger shankle, jerky prosciutto venison cow pork chop ground round jowl kielbasa. Tri-tip cow tenderloin, spare ribs pork loin shoulder landjaeger pancetta chicken ham doner alcatra shankle biltong. Beef bresaola strip steak tail beef ribs chuck ground round spare ribs kevin corned beef sirloin drumstick t-bone bacon meatloaf. Strip steak andouille ham hock fatback tenderloin t-bone capicola hamburger venison.</p>
+					<div id="googleMap"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="footer" class="footer">
+			<div class="content-wrapper">
+				<div class="addr">
+					<h4>Apex Results Realty Inc.</h4>
+					<address>
+						2465 Walkers Line<br>
+						Burlington, Ontario<br>
+						L7M 1A3<br>
+						905.332.4111
+					</address>
+				</div>
+				<div class="info">
+					<h4>Liene Abraham</h4>
+					<p>Sales Representative<br>
+					   liene@gmail.com<br>
+					   289.802.3845<br>
+					   Follow me on <a href=""><i class="fa fa-instagram"></i></a>  <a href=""><i class="fa fa-facebook"></i></a> <a href=""><i class="fa fa-twitter"></i></a>
+					</p>
+				</div>
+			</div>
+			<div class="copy">&copy; 2016 <strong>JESSICA LEE</strong>. All rights reserved.</div>	
+		</section>
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>
+			function initialize() {
+			  var mapProp = {
+			    center:new google.maps.LatLng(43.236082,-79.867456),
+			    zoom:12,
+			    mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+
+			$(document).ready(function(){
+				$(".fa-bars").on("click", function(){
+					$(".dropdown").toggleClass("open");
+				});
+				$(document).ready(function(){
+			      $(window).scroll(function() { 
+			        if ($(document).scrollTop() > 90) {
+			          $("nav").css({"background-color":"#76684f"});
+			        } else {
+			          $("nav").css({"background-color":"transparent", "color":"#fff"});
+			          $("nav ul a").css("color", "#fff");
+			        }
+			      });
+			    });
+			});
+		</script>
+	</body>
+</html>

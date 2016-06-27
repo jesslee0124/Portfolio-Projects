@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>@jess_youjin | Patatap Clone</title>
+		<link rel="stylesheet" href="circles.css">
+		<script src="paper-full.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.min.js"></script>
+		<script type="text/paperscript" canvas="myCanvas">
+			var keyData = {
+				a: {
+					color: "purple",
+					sound: new Howl({ 
+						urls: ['sounds/bubbles.mp3'] 
+					})
+				},
+				s: {
+					color: "green",
+					sound: new Howl({ 
+						urls: ['sounds/clay.mp3'] 
+					})
+				},
+				d: {
+					color: "yellow",
+					sound: new Howl({ 
+						urls: ['sounds/confetti.mp3'] 
+					})
+				},
+				f: {
+					color: "red",
+					sound: new Howl({ 
+						urls: ['sounds/corona.mp3'] 
+					})
+				},
+				g: {
+					color: "pink",
+					sound: new Howl({ 
+						urls: ['sounds/dotted-spiral.mp3'] 
+					})
+				},
+				h: {
+					color: "blue",
+					sound: new Howl({ 
+						urls: ['sounds/flash-1.mp3'] 
+					})
+				},
+				j: {
+					color: "silver",
+					sound: new Howl({ 
+						urls: ['sounds/flash-2.mp3'] 
+					})
+				},
+				k: {
+					color: "violet",
+					sound: new Howl({ 
+						urls: ['sounds/flash-3.mp3'] 
+					})
+				},
+				l: {
+					color: "navy",
+					sound: new Howl({ 
+						urls: ['sounds/glimmer.mp3'] 
+					})
+				}
+			}
+
+			var circles = [];
+
+			function onKeyDown(event) {
+				if (keyData[event.key]) {
+					var maxPoint = new Point(view.size.width, view.size.height);
+					var randomPoint = Point.random();
+					var point = maxPoint * randomPoint;	
+					var newCircle = new Path.Circle(point, 500);
+					newCircle.fillColor = keyData[event.key].color;
+					keyData[event.key].sound.play();
+					circles.push(newCircle);
+				}
+			}
+
+			function onFrame(event) {
+				for(var i = 0; i < circles.length; i++) {
+					circles[i].fillColor.hue += 1;
+					circles[i].scale(.9);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" resize></canvas>
+		<script type="text/javascript" src="circles.js"></script>
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html> 
+<html>
+	<head>
+		<title>Jessica Lee | Front-End Developer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/png" href="images/favicon.ico">
+	</head>
+	<body>
+		<header>
+			<h1>JESSICA LEE</h1>
+			<h2>a passionate front-end developer</h2>
+			<a class="btn" href="#about">
+				<button>GET TO KNOW HER</button>
+				<i class="fa fa-angle-down"></i>
+			</a>
+			<p>
+				<a class="social" href="http://twitter.com/jess_youjin" target="_blank"><i class="fa fa-twitter share"></i></a> 
+				<a class="social" href="https://ca.linkedin.com/in/jessyoujinlee" target="_blank"><i class="fa fa-linkedin share"></i></a>  
+				<a class="social" href="https://plus.google.com/111437490046103275121/posts" target="_blank"><i class="fa fa-google-plus share"></i></a>  
+				<a class="social" href="https://github.com/jesslee0124" target="_blank"><i class="fa fa-github-alt"></i></a>
+			</p>
+		</header>
+		<nav>
+			<span class="fa fa-bars fa-2x" title="menu"></span>
+			<ul class="dropdown">
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<section id="about" class="about">
+			<div class="content-wrapper">
+				<h2><span class="color">About</span> Me</h2>
+				<div class="description">
+					<p class="left"><img src="images/about.png" /></p>
+					<p>I am a <span class="color">freelance front-end developer</span> based in Toronto. I love developing simple websites with clear code. Converting beautiful designs into live and functional websites gives me joy. I work with <span class="color">HTML, CSS, Javascript, jQuery, Bootstrap, and WordPress</span>. For version control, I use <span class="color">Github and Bitbucket</span>. <br><br>
+					I am a graduate from Sheridan College with Diploma in Computer Programmer with high-honours. <span class="color">Previously</span>, I finished Bachelor of Arts in English Language and Literature and used to teach English at a local university in South Korea. I decided to study programming while researching ways to build a custom curriculum. When I found myself spending more time on coding than preparing for classes, I realized I had to pursue my new passion.<br><br>
+					<span class="color">When I am not coding</span>, I love listening to music as well as playing the piano. I enjoy learning about new cultures and languages. I am also a huge coffee lover.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="projects">
+			<div class="content-wrapper">
+				<h2>Projects</h2>
+				<div class="column">
+					<a href="http://avenafoods.com" target="_blank">
+						<div class="portfolio img1">
+							<div class="bg">
+								<h3>Avena Foods<br> - In Progress</h3>
+								<p>HTML CSS Flexbox-Layout Javascript PHP WordPress Responsive Github</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="http://mobile.sheridanc.on.ca/~leeyouj/preCourseWork_multiplePages/" target="_blank">
+						<div class="portfolio img2">
+							<div class="bg">
+								<h3>Realtor Website</h3>
+								<p>Design HTML CSS Javascript GoogleAPI Responsive</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="http://mobile.sheridanc.on.ca/~leeyouj/2016_Tech_Challenge/" target="_blank">
+						<div class="portfolio img3">
+							<div class="bg">
+								<h3>PSD to HTML</h3>
+								<p>HTML CSS Responsive</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="http://mobile.sheridanc.on.ca/~leeyouj/" target="_blank">
+						<div class="portfolio img4">
+							<div class="bg">
+								<h3>Portfolio Website</h3>
+								<p>Design HTML CSS SASS Javascript Bootstrap GoogleAPI CSSAnimation</p>
+							</div>
+						</div>
+					</a>	
+				</div>
+			</div>			
+		</section>
+
+		<section id="contact" class="contact">
+			<h2><span class="color">Contact</span> Me</h2>
+			<h3>feel free to talk to me if you're interested in working with me!</h3><br>
+			<a class="btn" href="mailto:jess.lee0124@gmail.com">
+				<button>jess.lee0124@gmail.com</button>
+				<i class="fa fa-envelope"></i>
+			</a>
+
+			<div class="social">
+				<a class="social" href="http://twitter.com/jess_youjin" target="_blank"><i class="fa fa-twitter fa-2x share"></i></a>
+				<a class="social" href="https://ca.linkedin.com/in/jessyoujinlee" target="_blank"><i class="fa fa-linkedin fa-2x share"></i></a>  
+				<a class="social" href="https://plus.google.com/111437490046103275121/posts" target="_blank"><i class="fa fa-google-plus fa-2x share"></i></a>  
+				<a class="social" href="https://github.com/jesslee0124" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a>
+			</div>
+		</section>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".fa-bars").on("click", function(){
+					$(".dropdown").toggleClass("open");
+				});
+			});
+		</script>
+	</body>
+</html>

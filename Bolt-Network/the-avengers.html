@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js"></script>
+  </head>
+  <body ng-app="BoltNetworkApp">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="header">
+          <div class="row">
+            <div class="col-m-2">
+              <a href="index.html"><img src="img/logo.svg" alt="Logo"></a> 
+            </div>
+            <div class="pull-right">
+              <ul>
+                <li>Log in</li>
+                <li><a class="btn btn-default" href="#">Sign up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-controller="MainController" ng-repeat="movie in movies" class="main">
+      <div class="container">
+        <div class="content">
+          <div class="row">
+            
+            <div class="col-md-3" class="series_img">
+              <img ng-src="{{ movie.title_img }}" alt="{{ movie.img_alt }}" >
+            </div>
+            
+            <div class="col-md-6">
+              <h1 class="series">{{ movie.title }}</h1>
+              <h2 class="episode">{{ movie.rating }} / 10</h2>
+              <p class="description">{{ movie.description }}</p>
+            </div>
+
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item"><span>Director:</span> {{ movie.director }}</li>
+                <li class="list-group-item"><span>Genre:</span> {{ movie.genre }}</li>
+                <li class="list-group-item"><span>Date:</span>  {{ movie.date | date:'MMMM d, y' }}</li>
+                <li class="list-group-item"><span>Runtime:</span> {{ movie.date | date:'h' }}h {{ movies.date | date:'m' }}m</li>
+                <li class="list-group-item"><span>Starring:</span> {{ movie.starring }}</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h6>Bolt</h6>
+            <ul>
+              <li>Careers</li>
+              <li>Terms</li>
+              <li>Help</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>More Bolt</h6>
+            <ul>
+              <li>Gift Cards</li>
+              <li>Trailers</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>News</h6>
+            <ul>
+              <li>Blog</li>
+              <li>Twitter</li>
+              <li>YouTube</li>
+              <li>Google+</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+  </body>
+</html>

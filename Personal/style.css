@@ -1,0 +1,439 @@
+/* GLOBAL STYLES 
+-----------------*/
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.35;
+}
+h1,
+h2,
+h3 {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.25;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+h2 {
+	font-size: 48px;
+}
+section {
+	padding: 65px 0;
+}
+.content-wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 40px;
+}
+.color {
+	color: #fa5354;
+}
+
+/* HEADER 
+----------*/
+header {
+	padding: 110px 0;
+	height: 625px;
+	background: url('images/desk.jpg') top center no-repeat fixed;
+	background-size: 100%;
+	color: #fff;
+	text-align: center;
+}
+header h1,
+header h2 {
+	text-shadow: 1px 1px 2px #aaa;
+}
+header h1 {
+	font-size: 66px;
+	padding: 50px 0 12px 0;
+	margin: 0 0 0 16px;
+	letter-spacing: 0.22em;
+}
+header h2 {
+	text-transform: none;
+	font-size: 32px;
+	letter-spacing: 0.022em;
+	margin: 0 0 45px 0;
+}
+
+header a.btn {
+    text-decoration: none;
+	padding: 25px 18px;
+    margin: 20px 0 0 0;
+    background-color: #fa5354;
+    border-radius: 50px;
+}
+
+header button {
+	color: #fff;
+	border: none;
+	outline: none;
+    background-color: #fa5354;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+}
+
+header a.btn:hover,
+header a.btn:hover button {
+	background-color: #dc3741;
+}
+
+header .fa-angle-down {
+	color: #fff;
+	padding: 0 0 0 331px;
+}
+
+header p {
+	padding: 36px 0 0 10px;
+}
+
+header .share {
+	padding: 0 22px 0 0;
+}
+
+header .social {
+	text-decoration: none;
+	color: #fff;
+}
+
+header .social:hover {
+	color: #fa5354;
+}
+
+/* NAVIGATION 
+--------------*/
+nav {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	-webkit-box-shadow: 0px 0px 10px 0px #777;
+	box-shadow: 0px 0px 10px 0px #777;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul a {
+	padding: 10px 35px;
+	display: block;
+	text-decoration: none;
+	color: #fa5354;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav ul a:hover {
+	color: #dc3741;
+	font-weight: bold;
+}
+/* List icon - will only show at 767px resolution or less. */
+nav .fa-bars {
+	display: none;
+}
+
+/* ABOUT SECTION 
+-----------------*/
+.about {
+	color: #222222;
+}
+.about .description {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.about .description p {
+	width: 50%;
+	float: left;
+	padding: 0 2%;
+	font-size: 18px;
+}
+
+.about .description p.left {
+	text-align: center;
+}
+
+.about .description p img {
+	width: 400px;
+	height: 250px;
+	margin: 50px 10px 0 0;
+}
+
+/* PROJECTS SECTION 
+--------------------*/
+.projects {
+	background: #fa5354;
+}
+.projects .bg {
+	background: rgba(1, 1, 1, 0.6);
+	width: 100%;
+	z-index: 1;
+	height: 180px;
+	padding: 30px 0 0 0;
+	display: none;
+}
+.projects .column {
+	width: 24%;
+	float: left;
+	text-align: center;
+	margin: 20px 0.5% 0 0.5%;
+}
+.projects a {
+	text-decoration: none;
+	color: #fff;
+}
+.projects .portfolio {
+	position: relative;
+	width: 100%;
+	height: 180px;
+}
+.projects .portfolio:hover .bg {
+	display: block;
+	transition: all 0.25s ease;
+}
+.projects .img1 {
+	background: url('images/pj1.jpg');
+	background-size: cover;
+}
+.projects .img2 {
+	background: url('images/pj2.jpg');
+	background-size: cover;
+}
+.projects .img3 {
+	background: url('images/pj3.jpg');
+	background-size: cover;
+}
+.projects .img4 {
+	background: url('images/pj4.jpg');
+	background-size: cover;
+}
+.projects p {
+	padding: 0 20px;
+	line-height: 1.25;
+}
+
+/* CONTACT SECTION
+--------------------*/
+.contact {
+	background: ##fff;
+	color: #222222;
+	text-align: center;
+}
+.contact h2 {
+	margin-top: 0;
+	margin-bottom: 28px;
+}
+.contact h3 {
+	text-transform: none;
+	margin: 0 0 28px 0;
+}
+.contact a.btn {
+    text-decoration: none;
+	padding: 25px 18px;
+    margin: 20px 0 0 0;
+    background-color: #fa5354;
+    border-radius: 50px;
+}
+.contact button {
+	color: #fff;
+	border: none;
+	outline: none;
+    background-color: #fa5354;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    margin: 0 0 28px 0;
+    text-transform: uppercase;
+}
+.contact a.btn:hover,
+.contact a.btn:hover button {
+	background-color: #dc3741;
+}
+.contact .fa-envelope {
+	color: #fff;
+	padding: 0 0 0 251px;
+}
+.contact .share {
+	padding: 0 22px 0 0;
+}
+.contact .social {
+	text-align: center;
+	text-decoration: none;
+	color: #222;
+	margin-top: 25px;
+}
+.contact .social:hover {
+	color: #fa5354;
+}
+.contact .social a {
+	margin: 0 10px;
+}
+
+/* MEDIA QUERIES 
+-----------------*/
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	header {
+		height: auto;
+	}
+	header h1 {
+		font-size: 50px;
+		padding-bottom: 10px;
+	}
+	header h2 {
+		font-size: 24px;
+	}
+	header .fa-angle-down {
+		padding: 0 0 0 195px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	.about .description p img {
+		width: 300px;
+		height: 200px;
+		margin: 120px 10px 0 0;
+	}
+	.about .description p {
+		font-size: 16px;
+	}
+	.projects .column {
+		width: 48%;
+	}
+	.contact .fa-envelope {
+		padding: 0 0 0 113px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	header h1 {
+		font-size: 40px;
+		padding: 6px 0 0 0;
+	}
+	header h2 {
+		font-size: 19.6px;
+		margin: 0 0 30px 0;
+	}
+	header a.btn {
+		padding: 15px 18px;
+	}
+	header .fa-angle-down {
+		padding: 0 0 0 116px;
+	}
+	header h3 {
+		display: none;
+	}
+	header p {
+		padding: 0;
+		margin: 40px 0 0 0;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	nav {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		background: #222;
+	}
+	nav .fa-bars {
+		display: block;
+		padding: 10px 15px;
+		color: white;
+		cursor: pointer;
+	}
+	nav ul.dropdown {
+		display: none;
+		text-align: left;
+		overflow: hidden;
+	}
+	nav ul.dropdown li {
+		display: block;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	nav ul.dropdown a {
+		color: white;
+		padding-left: 15px;
+	}
+	nav ul.dropdown.open {
+		display: block;
+	}
+	.about .content-wrapper p {
+		width: 100%;
+	}
+	.about .content-wrapper .description p {
+		font-size: 16px;
+		padding: 0;
+	}
+	.about .description p img {
+		margin: 30px 0 0 10px;
+	}
+	.contact h3 {
+		font-size: 16px;
+	} 
+	.contact a.btn {
+		padding: 15px 18px;
+	}
+	.contact .fa-envelope {
+		padding: 0 0 0 34px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	header,
+	nav,
+	section {
+		min-width: 320px;
+	}
+	header {
+		padding: 80px 40px 0 40px;
+		min-height: 220px;
+	}
+	header h1 {
+		font-size: 30px;
+		margin: 0 0 0 4px;
+	}
+	header h2 {
+		font-size: 14.6px;
+		margin: 0 0 22px 0;
+	}
+	header .fa-angle-down {
+		padding: 0 0 0 22px;
+	}
+	header p {
+		padding: 0 0 30px 0;
+		margin: 30px 0 0 0;
+	}
+	.content-wrapper {
+		padding: 0 25px;
+	}
+	.projects .column {
+		width: 100%;
+	}
+	.projects h3 {
+		font-size: 16px;
+	}
+	.projects p {
+		margin-top: 10px;
+	}
+	.contact .fa-envelope {
+		padding: 0;
+	}
+}
